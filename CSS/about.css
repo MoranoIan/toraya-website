@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* header/general formatting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    min-width: 400px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/wallp.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    height: 13vh;
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+header .logo { /* for the toraya logo */
+    margin-top: 30px;
+    margin-right: auto;
+    width: 12vw;
+}
+header .logo img { /* for the logo image */
+    width: 100%;
+}
+header nav { /* for nav tag */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .navigation { /* for navigation menu */
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+header nav .navigation li a { /* for text in navigation menu */
+    position: relative;
+    font-size: 1.2vw;
+    margin-left: 60px;
+    transition: all .55s ease;
+    text-decoration: none;
+    color: #000;
+}
+/* end of header */
+/* about us */
+
+.page-tag {
+    text-align: center;
+}
+.about { /* about us */
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 650;
+}
+.about-container { /* image and description container */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    margin-top: 60px;
+    margin-left: 120px;
+    margin-right: 120px;
+    column-gap: 20px;
+    z-index: 10;
+}
+.proprietors { /* image of owners/proprietors */
+    display: flex;
+    max-width: 600px;
+    max-height: 400px;
+    min-width: 400px;
+    min-height: 200px;
+    height: 100%;
+    width: 100%;
+    padding-left: 40px;
+}
+.shop-description { /* shop description */
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-size: 1.2rem;
+    padding-left: 30px;
+    padding-right: 20px;
+    justify-content: space-between;
+    font-weight: 400;
+    z-index: 25;
+}
+.japan {
+    position: absolute;
+    max-width: 450px;
+    max-height: 250px;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    margin-top: 280px;
+    padding-right: 70px;
+    z-index: -10;
+    opacity: 50%;
+}
+.content-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 150px;
+}
+.content-title span, .page-tag span {
+    color: #fa4974;
+}
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 100px;
+    margin-top: 40px;
+    column-gap: 70px;
+}
+#grid-container > div, .grid-icon {
+    padding-top: 18px;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#grid-container .grid-icon {
+    width: 120px;
+}
+#grid-container .grid-item-a h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 8px;
+}
+#grid-container .grid-item-b {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+/* for responsiveness */
+@media screen and (max-width: 1200px) {
+    #about-container{
+        grid-template-columns: auto;
+    }
+    .proprietors{
+        text-align: center;
+        padding-left: 200px;
+    }
+}

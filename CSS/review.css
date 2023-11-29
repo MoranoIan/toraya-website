@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* header/general formatting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    min-width: 400px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/wallp.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    height: 13vh;
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+header .logo { /* for the toraya logo */
+    margin-top: 30px;
+    margin-right: auto;
+    width: 12vw;
+}
+header .logo img { /* for the logo image */
+    width: 100%;
+}
+header nav { /* for nav tag */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .navigation { /* for navigation menu */
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+header nav .navigation li a { /* for text in navigation menu */
+    position: relative;
+    font-size: 1.2vw;
+    margin-left: 60px;
+    transition: all .55s ease;
+    text-decoration: none;
+    color: #000;
+}
+/*end of header*/
+/*review page*/
+.cover {
+    display: grid;
+    grid-template-columns: 50% auto;
+    justify-content:space-evenly;
+    padding: 4% 6% 16% 6%;
+    column-gap: 4%;
+    row-gap: 4%;
+}
+.coverText {
+    margin: auto;
+}
+.japanCulture { /* image of japan culture */
+    width: 100%;
+    height: auto;
+}
+.letsWorkTogether { /*let's work together button*/
+    background: none;
+    color: #101010;
+    border: 1px solid #101010;
+    width: 39%;
+    margin: 2vh 3vw 0 0;
+}
+.contactUs { /*contact us button*/
+    background: #fa4974;
+    color: white;
+    border: 1px solid #fa4974;
+    width: 39%;
+}
+.letsWorkTogether, .contactUs { /*buttons: contact us & let's work together */
+    font-size: 1.1vw;
+    border-radius: 2px;
+    padding: 1vw;
+    transition: .4s;
+}
+.letsWorkTogether:hover, .contactUs:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+}
+#button{
+    width: 167px;
+}
+#head { /*page tag/title*/
+    line-height: 1.1;
+    padding-bottom: 10px;
+}
+#head .abundance {
+    color: #101010;
+    font-size: 2.8vw;
+    font-weight: 600;
+}
+#head .customers {
+    font-size: 3vw;
+    font-weight: 800;
+    color: #fa4974;
+}
+#desc { /*short shop description*/
+    font-size: 1.2vw;
+}
+/* for review section */
+.header { /*title/header in review section*/
+    text-align: center;
+    line-height: 1;
+    padding: 2% 0px 2% 0px;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+.header .reviews {
+    font-size: 2.8vw;
+    color: #fa4974;
+    font-weight:bold;
+}
+.header .whatsays {
+    font-size: 2.8vw;
+    color:#101010;
+    font-weight:800;
+}
+.reviewContainer { /*container for reviews/testimonials*/
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content:center;
+    padding: 2% 6% 4.6vh 6%;
+    row-gap: 3vh;
+    column-gap: 3.5vw;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+.reviewBox { /*box for review content */
+    display: grid;
+    grid-template-columns: 5.7vw auto;
+    grid-template-rows: auto 55% auto;
+    height: 34.5vh;
+    background-color: rgba(255, 255, 255, 0.938);
+    padding: 10px 20px;
+    row-gap: 0px;
+    border-radius:10px;
+    box-shadow: .2vw .2vw .2vw #fa4974;
+}
+.content { /*review content*/
+    grid-column: 1 / 3;
+    font-style: italic;
+    overflow: auto;
+    font-size: 1.2vw;
+}
+/*scrollbar for written reviews */
+.content::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+.content::-webkit-scrollbar-thumb {
+    background: #fa4974;
+    border-radius: 10px;
+}
+.content::-webkit-scrollbar-thumb:hover {
+    background: #fa4974;
+}
+.content::-webkit-scrollbar {
+    width: 5px;
+}
+.name::-webkit-scrollbar {
+    height: 0px;
+}
+/*end of scrollbar format*/
+.profileImage { /*profile image of users/reviews*/
+    align-self: center;
+    justify-self: center;
+}
+.companyLogo {
+    position: absolute;
+    width: 1.4vw;
+}
+.profilePicture {
+    max-width: 4.7vw;
+    width: 100%;
+    height: auto
+}
+.name { /*username*/
+    transition: .4s;
+    margin-left: 1%;
+    font-weight: bold;
+    align-self: center;
+    font-size: 1.4vw;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.date { /*review date*/
+    text-align: right;
+    grid-column: 1/3;
+    font-size: 0.9vw;
+    align-self: last baseline;
+}
+
+/*write a review*/
+.submissionContainer { /*container for the text area and submit button*/
+    display: grid;
+    grid-template-columns: 86vw;
+    justify-content: center;
+    row-gap: 6%;
+    background-color: rgba(255, 255, 255, 0.938);
+}
+.submissionBox { /*box for the text area*/
+    padding: 2%;
+    height:  40vh;
+    color: #101010;
+    background-color: rgba(255, 255, 255, 0.938);
+    border-radius:10px;
+    box-shadow: .2vw .2vw .2vw #fa4974;
+}
+.formTextArea textarea { /*text area*/
+    height: 100%;
+    background: none;
+    outline: none;
+    width: 100%;
+    resize: none;
+    border: none;
+    font-size: 1.2vw;
+}
+/*submit button*/
+.submitButton {
+    text-align: center;
+    padding: 2.5%;
+    font-size: 1.3vw;
+    background-color: rgba(255, 255, 255, 0.664);
+    margin-bottom: 10vh;
+}
+.buttonFormat {
+    background: #fa4974;
+    color: white;
+    margin: auto;
+    width: 15.8vw;
+    height: 6.9vh;
+    font-size: 1.1vw;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .4s;
+}
+.buttonFormat:hover {
+    transform: scale(1.1);
+}
+
+/*for responsiveness */
+@media screen and (max-width: 800px) {
+    .CRnew{
+        grid-template-columns: auto;
+        row-gap: 4%;
+        column-gap: 4%;
+    }
+    .reviewContainer{
+        grid-template-columns: auto;
+    }
+}

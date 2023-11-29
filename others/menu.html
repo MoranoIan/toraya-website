@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="authors" content="Morano, Oka, Balanza">
+        <title>Toraya: Japanese Snacks Cafe</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/menu.css">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <header>
+            <div class="logo"> <!--logo-->
+                <a href="../index.html"><img src="../images/newlogo.png" alt="logo"></a>
+            </div> <!--end of logo-->
+            <nav> <!--start of navigation bar, order button-->
+                <ul class="navigation">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav> <!--end of logo, navigation bar, order button-->
+        </header>
+
+        <!--sticky back to top button-->
+        <a href="#top_page"><button class="back_button" type="button" title="top">Back To Top</button></a>
+
+        <!--grid for sections-->
+        <div class="grid-layout" id="top_page">
+            <!--fist row-->
+            <div class="pics">
+                <img class="cartoon" src="../images/cartoon/cartoonramen.png" alt="cartoon ramen">
+                <br><a href="#noodles"><button class="button" type="button" title="Noodles">View Prices</button></a>
+                <br><br><p>Made with a rich broth, perfectly cooked noodles,
+                    and your favorite toppings, ramen is the perfect comfort
+                    food for any occasion.</p>
+            </div>
+            <div class="pics">
+                <img class="cartoon" src="../images/cartoon/cartoontakoyaki.png" alt="cartoon takoyaki">
+                <br><a href="#takoyaki"><button class="button" type="button" title="Takoyaki">View Prices</button></a>
+                <br><br><p>Golden-brown balls of savory goodness, filled with diced octopus
+                    and topped with your favorite toppings.</p>
+            </div>
+            <div class="pics">
+                <img class="cartoon" src="../images/cartoon/cartoontaiyaki.png" alt="cartoon taiyaki">
+                <br><a href="#taiyaki"><button class="button" type="button" title="Taiyaki">View Prices</button></a>
+                <br><br><p>A Japanese fish-shaped cake filled with sweet red bean paste. It
+                    is a popular street food that is often enjoyed as a snack or dessert.</p>
+            </div>
+
+            <!--second row-->
+            <div class="pics">
+                <img class="cartoon" src="../images/cartoon/cartoonkushikatsu.png" alt="cartoon kushikatsu">
+                <br><a href="#kushikatsu"><button class="button" type="button" title="Kushikatsu">View Prices</button></a>
+                <br><br><p>Kushikatsu is a popular Japanese
+                dish that consists of various meats and
+                seafood that are skewered and then deep-fried to perfection.</p>
+            </div>
+            <div class="pics">
+                <img class="cartoon" src="../images/cartoon/longpot.png" alt="long potato">
+                <br><a href="#longpotato"><button class="button" type="button" title="Long Potato">View Prices</button></a>
+                <br><br><p>Long fries are a delicious and satisfying snack or side dish when 
+                you're in the mood for something crispy and delicious!</p>
+            </div>
+            <div class="pics">
+                <img class="cartoon" src="../images/cartoon/cartoonboba.png" alt="cartoon boba">
+                <br><a href="#drinks"><button class="button" type="button" title="Drinks">View Prices</button></a>
+                <br><br><p>From the refreshing coolness of soda to the rich and 
+                velvety flavor of milktea, choose from the various drinks we have 
+                in store for you!</p>
+            </div>
+        </div>
+        <!--end of grid section-->
+
+
+        <!--menu grid-->
+
+        <!--RAMEN-->
+        <h2><span class="head" id="noodles">RAMEN</span></h2>
+        <section>
+            <div class="menu">
+                <div id="lightsaltramen">
+                    <img src="../images/tonkotsu.png" alt="Light Salt Ramen">
+                    <p><span>Light Salt Ramen</span><br> P200</p>
+                </div>
+                <div id="torayaramen">
+                    <img src="../images/tonkotsu.png" alt="Toraya Ramen">
+                    <p><span>Toraya Ramen</span><br> P200</p>
+                </div>
+                <div id="shrimpmisoramen">
+                    <img src="../images/tonkotsu.png" alt="Shrimp Miso Ramen">
+                    <p><span>Shrimp Miso Ramen</span><br> P300</p>
+                </div>
+                <div id="soba">
+                    <img src="../images/soba.png" alt="Soba">
+                    <p><span>Soba</span><br> P100</p>
+                </div>
+                <div id="spicyramen">
+                    <img src="../images/spicy.png" alt="Spicy Ramen">
+                    <p><span>Spicy Ramen</span><br> P300</p>
+                </div>
+                <div id="udon">
+                    <img src="../images/soba.png" alt="Udon">
+                    <p><span>Udon</span><br> P90</p>
+                </div>
+            </div>
+        </section>
+
+        <!--TAKOYAKI-->
+        <h2><span class="head" id="takoyaki">Takoyaki</span></h2>
+        <section>
+            <div class="menu takoyakii">
+                <div id="tako">
+                    <img src="../images/takoyaki/original.jpg" alt="Original Takoyaki">
+                    <p><span>Original</span><br><br> HALF <br>4 pcs - P60<br>WHOLE<br> 8 pcs - P120</p>
+                </div>
+                <div id="tako">
+                    <img src="../images/takoyaki/katuobushi.jpg" alt="Katuobushi Takoyaki">
+                    <p><span>Katsuobushi</span><br><br>HALF<br> 4 pcs - P70<br>WHOLE<br> 8 pcs - P140</p>
+                </div>
+                <div id="tako">
+                    <img src="../images/takoyaki/negipon.jpg" alt="Negipon Takoyaki">
+                    <p><span>Negipon</span><br><br>HALF <br>4 pcs - P70<br>WHOLE<br> 8 pcs - P140</p>
+                </div>
+                <div id="tako">
+                    <img src="../images/takoyaki/akashi.jpg" alt="Akashi Takoyaki">
+                    <p><span>Akashi</span><br><br>HALF<br> 4 pcs - P70<br>WHOLE<br> 8 pcs - P140</p>
+                </div>
+            </div>
+        </section>
+
+        <!--TAIYAKI-->
+        <h2><span class="head" id="taiyaki">Taiyaki</span></h2>
+        <section>
+            <div class="menu">
+                <div id="anko">
+                    <img src="../images/anko.png" alt="anko taiyaki">
+                    <p><span>Anko Taiyaki</span><br> P30</p>
+                </div>
+                <div id="leche">
+                    <img src="../images/anko.png" alt="Leche Flan Taiyaki">
+                    <p><span>Leche Flan Taiyaki</span><br> P30</p>
+                </div>
+                <div id="ube">
+                    <img src="../images/ube.png" alt="ube taiyaki">
+                    <p><span>Ube Taiyaki</span><br> P30</p>
+                </div>
+            </div>
+        </section>
+
+        <!--KUSHIKATSU-->
+        <h2><span class="head" id="kushikatsu">Kushikatsu</span></h2>
+        <section>
+            <div class="menu kushikatsu">
+                <img id="kushikatsuimage" src="../images/kushikatsu.jpg" alt="kushikatsu">
+                <p><span>Cheese</span><br> P15</p>
+                <p><span>Pork</span><br> P20</p>
+                <p><span>Chicken</span><br> P20</p>
+                <p><span>Shrimp</span><br> P25</p>
+            </div>
+        </section>
+
+        <!--LONG POTATO-->
+        <h2><span class="head" id="longpotato">Long Potato</span></h2>
+        <section>
+            <div class="menu longpot">
+                <div id="longpotatoimage">
+                    <img src="../images/long_potato.jpg" alt="long potato">
+                </div>
+                <p><span>Seaweed Salt</span><br>P50</p>
+                <p><span>Sour Cream</span><br>P50</p>
+                <p><span>Corn</span><br>P50</p>
+                <p><span>Pottage</span><br>P50</p>
+                <p><span>Cheese & Pepper</span><br>P50</p>
+                <p><span>Consomme</span><br>P50</p>
+                <p><span>Barbeque</span><br>P50</p>
+                <p><span>Bacon and Garlic</span><br>P50</p>
+                <p><span>Chili Garlic</span><br>P50</p>
+            </div>
+        </section>
+
+        <h2><span class="head" id="drinks">Drinks</span></h2>
+        <section>
+            <!--TEA BASED DRINKS-->
+            <div class="menu">
+                <span class="drink_heading">Tea Based Beverages</span>
+                <div id="winter_tea">
+                    <img src="../images/drinks/Tea/wintermelon.jpg" alt="wintermelon">
+                    <p><span>Wintermelon Tea</span><br>P110</p>
+                </div>
+                <div id="hokkaido_tea">
+                    <img src="../images/drinks/Tea/hokkaido.jpg" alt="hokkaido">
+                    <p><span>Hokkaido Tea</span><br>P110</p>
+                </div>
+                <div id="okinawa_tea">
+                    <img src="../images/drinks/Tea/okinawa.jpg" alt="okinawa">
+                    <p><span>Okinawa Tea</span><br>P110</p>
+                </div>
+                <div id="salted_tea">
+                    <img src="../images/drinks/Tea/saltedcaramel.jpg" alt="salted caramel">
+                    <p><span>Salted Caramel Tea</span><br>P110</p>
+                </div>
+                <div id="caramel_tea">
+                    <img src="../images/drinks/Tea/caramelmacchiato.jpg" alt="caramel macchiato">
+                    <p><span>Caramel Macchiato Tea</span><br>P110</p>
+                </div>
+                <div id="cookies_tea">
+                    <img src="../images/drinks/Tea/cookiescream.jpg" alt="cookies and cream">
+                    <p><span>Cookies & Cream Tea</span><br>P110</p>
+                </div>
+            </div>
+            <div class="menu2">
+                <div id="hershey_tea">
+                    <img src="../images/drinks/Tea/hershey.jpg" alt="hershey">
+                    <p><span>Hershey's Tea</span><br>P110</p>
+                </div>
+                <div id="cheesecake_tea">
+                    <img src="../images/drinks/Tea/cheesecake.jpg" alt="cheesecake">
+                    <p><span>Cheesecake Tea</span><br>P110</p>
+                </div>
+            </div>
+            <!--SODA BASED DRINKS-->
+            <div class="menu soda">
+                <span class="drink_heading">Soda Based Beverages</span>
+                <div id="lemon_soda">
+                    <img src="../images/drinks/Soda/lemon.jpg" alt="lemon soda">
+                    <p><span>Lemon Soda</span><br>P110</p>
+                </div>
+                <div id="greenapple_soda">
+                    <img src="../images/drinks/Soda/greeapple.jpg" alt="green apple soda">
+                    <p><span>Green Apple Soda</span><br>P110</p>
+                </div>
+                <div id="strawberry_soda">
+                    <img src="../images/drinks/Soda/strawberry.jpg" alt="strawberry soda">
+                    <p><span>Strawberry Soda</span><br>P110</p>
+                </div>
+                <div id="blueberry_soda">
+                    <img src="../images/drinks/Soda/blueberry.jpg" alt="blueberry">
+                    <p><span>Blueberry Soda</span><br>P110</p>
+                </div>
+            </div>
+            <!--FRUIT BASED DRINKS-->
+            <div class="menu">
+                <span class="drink_heading">Fruit Based Beverages</span>
+                <div id="lemon_fruit">
+                    <img src="../images/drinks/Fruit/lemon.jpg" alt="lemon yogurt fruit tea">
+                    <p><span>Lemon Yogurt Fruit Tea</span><br>P110</p>
+                </div>
+                <div id="greenapple_fruit">
+                    <img src="../images/drinks/Fruit/greenapple.jpg" alt="green apple fruit tea">
+                    <p><span>Green Apple Fruit Tea</span><br>P110</p>
+                </div>
+                <div id="strawberry_fruit">
+                    <img src="../images/drinks/Fruit/strawberry.jpg" alt="strawberry fruit tea">
+                    <p><span>Strawberry Fruit Tea</span><br>P110</p>
+                </div>
+            </div>
+
+            <!--MILK BASED BEVERAGES-->
+            <div class="menu">
+                <span class="drink_heading">Milk Based Beverages</span>
+                <div id="matcha_milk">
+                    <img src="../images/drinks/Milk/matcha.jpg" alt="matcha">
+                    <p><span>Matcha</span><br>P140</p>
+                </div>
+                <div id="mango_milk">
+                    <img src="../images/drinks/Milk/mango.jpg" alt="cheesy mango">
+                    <p><span>Cheesy Mango</span><br>P140</p>
+                </div>
+                <div id="strawberry_milk">
+                    <img src="../images/drinks/Milk/strawberry.jpg" alt="strawberry">
+                    <p><span>Strawberry</span><br>P140</p>
+                </div>
+            </div>
+            <div class="menu2">
+                <div id="hershey_milk">
+                    <img src="../images/drinks/Milk/hershey.jpg" alt="hershey">
+                    <p><span>Hershey's</span><br>P140</p>
+                </div>
+                <div id="honeydew_milk">
+                    <img src="../images/drinks/Milk/honeydew.jpg" alt="honey dew">
+                    <p><span>Honey Dew</span><br>P140</p>
+                </div>
+            </div>
+
+            <!--FRAPPUCCINO-->
+            <div class="menu">
+                <span class="drink_heading">Frappuccino</span>
+                <div id="hershey_frappe">
+                    <img src="../images/drinks/Frappe/hershey.jpg" alt="hershey frappe">
+                    <p><span>Hershey's Frappe</span><br>P150</p>
+                </div>
+                <div id="cookiescream_frappe">
+                    <img src="../images/drinks/Frappe/cookiescream.jpg" alt="cookies and cream">
+                    <p><span>Cookies & Cream Frappe</span><br>P150</p>
+                </div>
+                
+                <div id="matcha_frappe">
+                    <img src="../images/drinks/Frappe/matcha.jpg" alt="matcha frappe">
+                    <p><span>Matcha Frappe</span><br>P150</p>
+                </div>
+            </div>
+            <div class="menu2">
+                <div id="strawberry_frappe">
+                    <img src="../images/drinks/Frappe/strawberry.jpg" alt="strawberry frappe">
+                    <p><span>Strawberry Frappe</span><br>P150</p>
+                </div>
+                <div id="blueberry_frappe">
+                    <img src="../images/drinks/Frappe/blueberry.jpg" alt="blueberry frappe">
+                    <p><span>Blueberry Frappe</span><br>P150</p>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* header/general formatting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    min-width: 400px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/wallp.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    height: 13vh;
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+header .logo { /* for the toraya logo */
+    margin-top: 30px;
+    margin-right: auto;
+    width: 12vw;
+}
+header .logo img { /* for the logo image */
+    width: 100%;
+}
+header nav { /* for nav tag */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .navigation { /* for navigation menu */
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+header nav .navigation li a { /* for text in navigation menu */
+    position: relative;
+    font-size: 1.2vw;
+    margin-left: 60px;
+    transition: all .55s ease;
+    text-decoration: none;
+    color: #000;
+}
+/* end of header/general formatting */
+/* home page */
+
+.home-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 6%;
+}
+.home-content {
+    text-align: center;
+}
+.item h1 {
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    line-height: 1;
+    margin: 140px 0 40px;
+}
+.item {
+    margin-top: -2%;
+}
+.item span {
+    color: #fa4974;
+}
+.item p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.home-content a {
+    display: inline-block;
+    color: white;
+    background: #fc4d78e5;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition:  all .55s ease;
+    text-decoration: none;
+}
+.home-content a:hover {
+    background: #ec7f9ae5;
+    transform: translateY(-5px);
+}
+.home-img img {
+    max-width: 1050px;
+    height: auto;
+    margin-left: -70px;
+}
+.bestSellers { /* best sellers section */
+    text-align: center;
+    line-height: 1;
+    margin-top: 18vw;
+    background-image: url(../images/bgFuji.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+}
+.bestSellers img { /* for sakura tree before the best sellers */
+    width: 85%;
+    opacity: 0.75;
+    margin-top: -40%;
+    margin-right: -55%;
+    z-index: -1000;
+}
+.bestSellers p { /* section title */
+    color: transparent;
+    -webkit-text-stroke-color: #fa4974;
+    -webkit-text-stroke-width: 2px;
+    padding-top: 125px;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.35rem;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+.slideshow {
+    margin-top: 0;
+    padding-top: 0;
+    z-index: 1000;
+}
+.slideGrid { /* grid of png and description */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+}
+.SGColumn p { /* description in slideshow*/
+    -webkit-text-stroke-width: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 15%;
+    margin-left: -10%;
+    align-items: center;
+    opacity: 1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.30rem;
+    line-height: normal;
+    color: #fa4975c3;
+}
+.SGColumn img { /* png in best sellers*/
+    width: 80%;
+    opacity: 1;
+    margin-top: 0;
+    margin-right: 0;
+}
+.takoyaki-description {
+    padding-right: 0;
+    padding-left: 30%;
+    margin-right: -20%;
+}
+.takoyaki img { /* png of takoyaki in best sellers */
+    width: 40%;
+}
+.taiyaki img { /* png of taiyaki in best sellers */
+    width: 35%;
+    margin-top: 10px;
+}
+@media screen and (max-width:900px) {
+    .home-content{
+        grid-template-columns: auto;
+    }
+    .item{
+        left:-500px
+    }
+}

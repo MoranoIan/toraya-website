@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* header/general formatting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    min-width: 400px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/wallp.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    position: sticky;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    height: 13vh;
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+header .logo { /* for the toraya logo */
+    margin-top: 30px;
+    margin-right: auto;
+    width: 12vw;
+}
+header .logo img { /* for the logo image */
+    width: 100%;
+}
+header nav { /* for nav tag */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .navigation { /* for navigation menu */
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+header nav .navigation li a { /* for text in navigation menu */
+    position: relative;
+    font-size: 1.2vw;
+    margin-left: 60px;
+    transition: all .55s ease;
+    text-decoration: none;
+    color: #000;
+}
+/* end of header */
+/* contact us */
+
+.contact { /* for "CONTACT" in Contact Us */
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 650;
+}
+.contactContent {
+    text-align: center;
+}
+.contact span { /* color of "us" in Contact Us */
+    color: #fa4974;
+}
+.contact-parent{
+    position: relative;
+}
+.sakura { /*image of sakura tree */
+    position: absolute;
+    max-width: 550px;
+    max-height: 800px;
+    width: 100%;
+    z-index: -20;
+    margin-left: -10px;
+    margin-top: -180px;
+    opacity: 75%;
+}
+.tower { /*image of tower/building */
+    position: fixed;
+    right: -160px;
+    bottom: 0;
+    margin-top: -80px;
+    width: 500px;
+    opacity: 45%;
+    z-index: -10;
+}
+.contact-container { /* Contact page - Message Us */
+    max-width: 960px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 100%;
+    align-items: center;
+    display: grid;
+    color: white;
+    z-index: 11;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    background: #f7aec19a;
+    box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.contact-container .form-container {
+    padding: 20px;
+    z-index: 12;
+}
+.form-container h3 { /* Contact page - for styling of the "Message Us" title */
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.form-container .contact-form {
+    display: grid;
+    row-gap: 1rem;
+}
+.contact-form input, .contact-form textarea { /* for the input name, email, and write a message area */
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    background: #f7a3b9af;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 0.4rem;
+}
+.contact-form textarea { /* write a message text area */
+    resize: none;
+    height: 200px;
+}
+.contact-form .send-button { /* for send button */
+    border: none;
+    outline: none;
+    background: #ff3131a9;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.contact-form .send-button:hover { /* for send button hover effect */
+    transform: scale(1.03);
+    background: #ff1b1b;
+}
+::placeholder { /* for text color of the input containers */
+    color: white;
+}
+.map iframe { /* google maps */
+    width: 100%;
+    height: 400px;
+    padding-right: 50px;
+    border:0;
+    z-index: 10;
+}
+.map:hover{ /* google maps hover effect */
+    transition: 0.2s;
+}/* end of contact container */
+.material-symbols-outlined{ /* for icons in contact us*/
+	float: left;
+    margin-right: 5px;
+}
+#row { /* for grid container of column */
+	display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.column { /* for information: contact#, address, operating hours */
+    align-items: center;
+    justify-content: space-between;
+	text-align: left;
+    width: 500px;
+	padding-left: 100px;
+	font-size: 0.92rem;
+    z-index: 15;
+}
+.column .info { /* for information */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/* for responsiveness */
+@media screen and (max-width:1000px){
+    #row{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:1200px){
+    #row{
+        grid-template-columns: auto auto;
+    }
+}
