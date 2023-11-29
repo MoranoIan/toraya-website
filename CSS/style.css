@@ -116,7 +116,7 @@ header nav .navigation li a { /* for text in navigation menu */
 .bestSellers { /* best sellers section */
     text-align: center;
     line-height: 1;
-    margin-top: 18vw;
+    margin-top: 10vw;
     background-image: url(../images/bgFuji.png);
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -133,7 +133,7 @@ header nav .navigation li a { /* for text in navigation menu */
     color: transparent;
     -webkit-text-stroke-color: #fa4974;
     -webkit-text-stroke-width: 2px;
-    padding-top: 125px;
+    padding-top: 140px;
     padding-left: 18px;
     font-weight: 700;
     font-size: 4rem;
@@ -187,7 +187,92 @@ header nav .navigation li a { /* for text in navigation menu */
 }
 .taiyaki img { /* png of taiyaki in best sellers */
     width: 35%;
-    margin-top: 10px;
+}
+/* start of review in header */
+.reviewHome {
+    margin-top: 50px;
+}
+#reviewHeader {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 8vh 0 8vh 0;
+}
+#reviewHeader span {
+    color: #fa4974;
+}
+.reviewContainer {
+    padding: 0 0 8vh 0;
+    display: grid;
+    grid-template-columns: auto 29% auto 29% auto 29% auto 0%;
+}
+.reviewItem{
+    display: grid;
+}
+.logoInherit{
+    grid-row: 1 / span 2;
+    height: 25vh;
+    background-color: #ffedf1;
+}
+.customerInherit{
+    grid-row: 4 / span 2;
+    display: grid;
+    grid-template-columns: max-content auto;
+    padding: 0 3vw;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    height: 15vh;
+}
+.faceBook, .a {
+    grid-column: 2;
+}
+.foodPanda, .b {
+    grid-column: 4;
+}
+.google, .c {
+    grid-column: 6;
+}
+.reviewSubItem1 {
+    justify-self: center;
+    align-self: center;
+}
+.companyLogo {
+    width: 5vw;
+}
+.backgroundColor {
+    grid-row: 2 / span 3;
+    background-color: #ffcddb;
+}
+.reviewContent {
+    display: grid;
+    grid-template-rows: 90% auto;
+    padding: 5vh 3vw 0 3vw;
+    font-size: 1rem;
+    background-color: white;
+    height: 40vh;
+}
+.date {
+    text-align: right;
+    align-self: last baseline;
+}
+.profilePicture {
+    width: 4vw;
+}
+.nameContent {
+    font-size: 0.9rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 1vw;
+    font-weight: 700;
+    text-align: left;
+}
+.nameContent::-webkit-scrollbar {
+    height: 0;
+}
+.profileBox {
+    display: grid;
 }
 @media screen and (max-width:900px) {
     .home-content{
