@@ -92,15 +92,17 @@ section{
     display: block;
     position: fixed;
     bottom: 30px;
-    right: 30px;
+    right: 50px;
     z-index: 99;
+    height: 50px;
+    width: 50px;
     border: none;
     outline: none;
     background-color: #f89db9;
     color: white;
     cursor: pointer;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 50%;
     font-size: 1rem;
     transition: .4s;
 }
