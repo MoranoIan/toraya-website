@@ -4,5 +4,5 @@
             Course & Year         :    Bachelor of Science in Computer Science - First Year
             Details               :    HTML - CSS - BOOTSTRAP - JavaScript - Final Requirement on the course "Introduction to Computing (Lecture [2 units] & Laboratory [1 unit])"
             Date                  :    December 01, 2023
-            Status                :    Development is On-going
+            Development Status    :    On-going
             
